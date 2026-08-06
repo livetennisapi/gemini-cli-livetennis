@@ -18,7 +18,7 @@ The server reads `LIVETENNISAPI_KEY` from your environment:
 export LIVETENNISAPI_KEY=twjp_your_key_here
 ```
 
-A free key needs no card (1,000 requests/day):
+A free key needs no card (100 requests/day):
 <https://livetennisapi.com/subscribe/free>
 
 ## Tools and plans
