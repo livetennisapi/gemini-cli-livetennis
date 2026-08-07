@@ -16,5 +16,7 @@ jobs:
       - uses: actions/checkout@v7
       - name: Validate gemini-extension.json
         run: |
-          jq -e '.name and .version and .mcpServers.livetennis.command and .contextFileName' gemini-extension.json
+          jq -e '.name and .version and .author and .mcpServers.livetennis.command and .contextFileName' gemini-extension.json
           test -f "$(jq -r '.contextFileName' gemini-extension.json)"
+      - name: Truthcheck
+        run: sh scripts/truthcheck.sh

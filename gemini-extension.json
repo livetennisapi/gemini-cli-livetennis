@@ -1,11 +1,12 @@
 {
   "name": "livetennis",
-  "version": "1.0.0",
-  "description": "Real-time tennis for Gemini CLI: live scores, upcoming matches, results, players and fixtures for ATP, WTA, Challenger and ITF via the Live Tennis API MCP server.",
+  "version": "1.1.0",
+  "description": "Real-time and historical tennis for Gemini CLI: live scores, upcoming matches, results back to 1968, rankings, in-play statistics, players and fixtures for ATP, WTA, Challenger, ITF and juniors via the Live Tennis API MCP server.",
+  "author": "Live Tennis API <hello@livetennisapi.com>",
   "mcpServers": {
     "livetennis": {
       "command": "npx",
-      "args": ["-y", "livetennisapi-mcp"],
+      "args": ["-y", "livetennisapi-mcp@^1.4.0"],
       "env": {
         "LIVETENNISAPI_KEY": "$LIVETENNISAPI_KEY"
       }
